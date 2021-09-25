@@ -1,6 +1,8 @@
 name: Auto release github actions
 
-on: push
+on:
+  release:
+    types: [published]
 
 jobs:
   actions-tagger:
